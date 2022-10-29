@@ -14,14 +14,14 @@ spec:
       paths:
       - backend:
           service:
-            name: user-service
+            name: user-service-nodeport
             port:
               number: 8081
         path: /register
         pathType: Prefix
       - backend:
           service:
-            name: user-service
+            name: user-service-nodeport
             port:
               number: 8081
         path: /authenticate
