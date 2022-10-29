@@ -28,14 +28,14 @@ spec:
         pathType: Prefix
       - backend:
           service:
-            name: game-service
+            name: game-service-nodeport
             port:
               number: 8082
         path: /score
         pathType: Prefix
       - backend:
           service:
-            name: game-service
+            name: game-service-nodeport
             port:
               number: 8082
         path: /score/?(.*)
